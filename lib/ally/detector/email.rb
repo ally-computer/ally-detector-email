@@ -14,12 +14,7 @@ module Ally
             @data_detected = true
           end
         end
-        if @email_addresses.length == 0 ?
-          nil
-        else
-          @data_detected = true
-          @email_addresses
-        end
+        @email_addresses.length == 0 ? nil : @email_addresses
       end
     
     end
